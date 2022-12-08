@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vityk Volodymyr</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+		@keyframes appear_hi {
+		  0% {
+		    opacity: 0;
+		  }
+
+		  30% {
+		    opacity: 0;
+		  }
+
+		  40% {
+		  	opacity: 1;
+		  }
+
+		  100% {
+		    opacity: 1;
+		  }
+		}
+
+		@keyframes appear_name {
+		  0% {
+		    opacity: 0;
+		  }
+
+		  40% {
+		    opacity: 0;
+		  }
+
+		  50% {
+		  	opacity: 1;
+		  }
+
+		  100% {
+		    opacity: 1;
+		  }
+		}
+
+		@keyframes appear_guide {
+		  0% {
+		    opacity: 0;
+		  }
+
+		  80% {
+		  	opacity: 0;
+		  }
+
+		  100% {
+		    opacity: 1;
+		  }
+		}
+
+		@keyframes appear_arrow {
+		  0% {
+		    opacity: 0;
+		  }
+
+		  70% {
+		    opacity: 0;
+		  }
+
+		  80% {
+		    opacity: 1;
+		    top: 60%
+		  }
+
+		  90% {
+		    opacity: 1;
+		    top: 70%
+		  }
+
+		  100% {
+		  	opacity: 1;
+		  	top: 60%
+		  }
+		}
+
+		@keyframes button_pressed {
+			0% {
+				background-color: #fff;
+				transform: scale(1);
+			}
+
+			20% {
+				background-color: #e0e0e0;
+				transform: scale(.9);
+			}
+
+			40% {
+				background-color: #fff;
+				transform: scale(1);
+			}
+
+			100% {
+				background-color: #fff;
+				transform: scale(1);
+			}
+		}
+
+		@keyframes adrien_animation {
+			0% {
+				color: #000;
+			}
+			25% {
+				color: #70D6FF;
+			}
+			50% {
+				color: #FF9770;
+			}
+			75% {
+				color: #FFD670;
+			}
+			100% {
+				color: #000;
+			}
+		}
+
+		@media only screen and (max-device-width: 480px) {
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			#greeting{
+				font-family: Karla;
+				position: absolute;
+				text-align: center;
+				vertical-align: middle;
+				color: black;
+				top: 0;
+				left: -27px;
+				width: 100%;
+				top: 40%;
+				z-index: -1;
+				animation-duration: 3s;
+  				animation-name: appear_hi;
+			}
+			#name{
+				font-family: Karla;
+				position: absolute;
+				text-align: center;
+				vertical-align: middle;
+				color: black;
+				top: 0;
+				left: 0;
+				width: 100%;
+				top: 45%;
+				z-index: -1;
+				animation-duration: 3s;
+  				animation-name: appear_name;
+			}
+			#adrien_name:hover{
+				animation-duration: 2s;
+  				animation-name: adrien_animation;
+  				animation-iteration-count: infinite;
+			}
+			.arrow{
+				transform: rotate(-180deg);
+				text-decoration: none;
+				font-family: Karla;
+				font-size: 10vw;
+				position: absolute;
+				text-align: center;
+				vertical-align: middle;
+				color: black;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: -1;
+				animation-duration: 3s;
+  				animation-name: appear_arrow;
+			}
+
+			#page_arrow{
+				top: 60%;
+			}
+
+			#blog_arrow{
+				top: 90%;
+			}
+
+			#guide{
+				font-family: Karla;
+				font-size: 3vw;
+				position: absolute;
+				text-align: center;
+				vertical-align: middle;
+				color: #676767;;
+				text-decoration: none;
+				top: 0;
+				left: 0;
+				width: 100%;
+				top: 95%;
+				z-index: -1;
+				animation-duration: 3s;
+  				animation-name: appear_guide;
+			}
+
+			#page{
+				/*background-color: #f2f2f2;*/
+				font-family: Karla;
+				position: absolute;
+				color: black;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				top: 100%;
+				z-index: -1;
+			}
+
+			#page_text{
+				font-family: Karla;
+				position: absolute;
+				text-align: center;
+				vertical-align: middle;
+				color: black;
+				font-size: 9vw;
+				top: 48%;
+				left: 0;
+				width: 100%;
+				z-index: -1;
+			}
+
+			#instagram{
+				position: absolute;
+				font-size: 6vw;
+				padding: 2%;
+				width: 30%;
+				border: solid black;
+				color: black;
+				text-decoration: none;
+				top: 60%;
+				left: 10%;
+				text-align: center;
+				/*background: #808080;*/
+			}
+
+			#facebook{
+				position: absolute;
+				padding: 2%;
+				width: 30%;
+				border: solid black;
+				font-size: 6vw;
+				color: black;
+				text-decoration: none;
+				top: 60%;
+				right: 10%;
+				text-align: center;
+				/*background: #808080;*/
+			}
+
+			#tiktok{
+				position: absolute;
+				padding: 2%;
+				width: 30%;
+				border: solid black;
+				font-size: 6vw;
+				color: black;
+				text-decoration: none;
+				top: 70%;
+				left: 10%;
+				text-align: center;
+				/*background: #808080;*/
+			}
+
+			#twitter{
+				position: absolute;
+				padding: 2%;
+				width: 30%;
+				border: solid black;
+				font-size: 6vw;
+				color: black;
+				text-decoration: none;
+				top: 70%;
+				right: 10%;
+				text-align: center;
+				/*background: #808080;*/
+			}
+
+			#spotify{
+				position: absolute;
+				padding: 2%;
+				width: 30%;
+				border: solid black;
+				font-size: 6vw;
+				color: black;
+				text-decoration: none;
+				top: 80%;
+				left: 10%;
+				text-align: center;
+				/*background: #808080;*/
+			}
+
+			#pinterest{
+				position: absolute;
+				padding: 2%;
+				width: 30%;
+				border: solid black;
+				font-size: 6vw;
+				color: black;
+				text-decoration: none;
+				top: 80%;
+				right: 10%;
+				text-align: center;
+				/*background: #808080;*/
+			}
+
+			#instagram:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
+			}
+
+			#facebook:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
+			}
+
+			#tiktok:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
+			}
+
+			#twitter:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
+			}
+
+			#spotify:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
+			}
+
+			#pinterest:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
+			}
+
+			#info_text{
+				font-family: Karla;
+				position: absolute;
+				text-align: center;
+				vertical-align: middle;
+				color: black;
+				font-size: 9vw;
+				top: 0%;
+				left: 0;
+				width: 100%;
+				z-index: -1;
+			}
+
+			#info_table{
+				font-family: Karla;
+				position: absolute;
+				text-align: left;
+				vertical-align: middle;
+				color: black;
+				font-size: 5vw;
+				top: 11%;
+				left: 10%;
+				width: 100%;
+				z-index: -1;
+			}
+
+			#blog{
+				font-family: Karla;
+				position: absolute;
+				color: black;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				top: 200%;
+				z-index: -1;
+			}
+
+			#blog_title{
+				font-family: Karla;
+				position: absolute;
+				text-align: center;
+				vertical-align: middle;
+				color: black;
+				font-size: 9vw;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: -1;
+			}
+
+			#cab_intro{
+				position: absolute;
+				padding: 2%;
+				width: 70%;
+				border: solid black;
+				font-size: 6vw;
+				color: black;
+				text-decoration: none;
+				top: 12%;
+				right: 13%;
+				text-align: center;
+			}
+
+			#cab_intro a{
+				color: black;
+				text-decoration: none;
+			}
+
+			#cab_intro:hover{
+				animation-duration: 3s;
+  				animation-name: button_pressed;
+			}
+
+
+    	}
+    </style>
+</head>
+<body>
+	<div>
+		<h1 id="greeting">Hi,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+		<h1 id="name">I am <span id="adrien_name">Volodymyr</span>.</h1>
+
+		<!-- <h1 id="arrow">^</h1> -->
+		<a class="arrow" id="page_arrow" href="#page">^</a>
+
+		<p><a id="guide" href="#page">press the arrow to continue</a></p>
+	</div>
+	<div id="page">
+
+		<h1 id="info_text">Info</h1>
+		<table id="info_table">
+			<tr>
+				<td><b>mbti:</b></td>
+				<td>intj</td>
+			</tr>
+			<tr>
+				<td><b>sign:</b></td>
+				<td>scorpio</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><b>fav artist:</b></td>
+				<td><a href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa" style="color: black; text-decoration: none;">Lana Del Rey</a></td>
+			</tr>
+			<tr>
+				<td><b>field of study:</b></td>
+				<td>International Relations</td>
+			</tr>
+			<tr>
+				<td><b>university:</b></td>
+				<td>UMCS</td>
+			</tr>
+			<tr>
+				<td><b>fav series: </b></td>
+				<td>Outer Banks, You</td>
+			</tr>
+			<tr>
+				<td><b></b></td>
+				<td>Lucifer</td>
+			</tr>
+		</table>
+
+
+
+		<h1 id="page_text">My socials</h1>
+
+		<div class="socials_button">
+			<a id="instagram" href = "instagram://user?username=lifelessadrien">Instagram</a>
+		</div>
+
+		<div class="socials_button">
+			<a id="facebook" href="fb://profile/100009249489055">Facebook</a>
+		</div>
+
+		<div class="socials_button">
+			<a id="tiktok" href="https://www.tiktok.com/@adragr4">TikTok</a>
+		</div>
+
+		<div class="socials_button">
+			<a id="twitter" href="https://twitter.com/braaedy4?ref_src=twsrc%5Etfw">Twitter</a>
+		</div>
+
+		<div class="socials_button">
+			<a id="spotify" href="https://open.spotify.com/user/nciguul4qvkc0nx1bioe8y9zt?si=Hzk1AF2JTfCu0EGUgOqNZA&utm_source=copy-link">Spotify</a>
+		</div>
+
+		<div class="socials_button">
+			<a id="pinterest" href="https://www.pinterest.com/braaedy4/">Pinterest</a>
+		</div>
+
+		<!-- <a class="arrow" id="blog_arrow" href="#blog">^</a> -->
+		
+	</div>
+	<!-- <div id="blog">
+		<h1 id='blog_title'>Blog</h1>
+		<h2 style="position: absolute;
+				   top: 40%;
+				   left: 33%;
+				   color: #808080;
+				   ">Coming soon</h2>
+		<div id="cab_intro" align="center">
+			<a href="google.com"></a>
+		</div>
+		
+	</div> -->
+</body>
